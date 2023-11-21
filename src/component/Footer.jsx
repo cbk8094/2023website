@@ -1,4 +1,4 @@
-import {Button, Container, Row, Col, Navbar, Nav, NavDropdown, Card, Offcanvas} from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
