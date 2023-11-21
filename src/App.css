@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
+
+a{
+  text-decoration: none;
+}
+.text-with-glow {
+  color: #fff;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.9); /* 외부 빛나는 효과 설정 */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.no-underline {
+  text-decoration: none !important;
+}
+/* @media (min-width: 768px) {
+
+} */
+.r-max{
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stroke-b{
+  border: solid 5px #0044ff;
+}
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SDSamliphopangche_Outline';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.intro-font{
+  font-family: 'yg-jalnan', normal;
+}
+.main-font{
+  font-family: 'Pretendard-Regular', normal;
+}
+.vg-font{
+  font-family: 'SDSamliphopangche_Outline',normal;
+}
+.head-nav{ 
+  box-shadow: 2px 2px 10px rgba(0, 27, 100, 0.7); 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.a-hover {
+  color: #000; /* 텍스트 기본 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+  transition: color 0.3s; /* 호버 효과에 애니메이션 추가 */
+}
+
+/* 호버 효과 */
+.a-hover:hover {
+  color: #754D19; /* 호버 시 색상 변경 */
+}
+
+.intro-bg-color {
+  background-color: #cdcdcd; /* 배경 색상을 원하는 색상으로 변경하세요 */
+  height: 100vh; /* 화면 높이의 100%로 설정하여 꽉 차게 만듭니다. */
+
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: -1;
+}
+.img-size{
+  width: 38%;
+  height: auto;
+}
+margin-l{
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.ph{
+  background-color: #001E36;
 }
-
-@keyframes App-logo-spin {
+.ill{
+  background-color: #FF9B00;
+}
+.ind{
+  background-color: #FF3366;
+}
+.premi{
+  background-color: #9A9AFF;
+}
+.c4d{
+  background-color: #222B76;
+}
+.second-index{
+  background-color: rgb(230, 230, 230);
+}
+.nav-header{
+  position: fixed;
+}
+@keyframes spin-r {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+
 }
+.spin-record{
+  animation: spin-r 2s linear infinite;
+}
+.visible {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none; /* 숨겨진 요소에 대한 이벤트를 비활성화합니다. */
+  transition: opacity 2s ease-in-out;
+}
+button {
+  border: none;
+  outline: none;
+}
+.button-youtube{
+  background-color: rgb(255, 92, 92);
+  color: white;
+  text-decoration-line: none;
+  border-radius: 30px;
+}
+.button-youtube:hover{
+  background-color: red;
+  
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.outer-glow {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.7);
+}
+.marquee {
+  height: 25px;
+  width: 420px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+.marquee2 {
+  width:1300px;
+  
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee2 span {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 5s linear infinite;
+}
+
+.marquee2 div {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee2 {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+.fav-box{
+  width:200px;
+  height:200px;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.fav-img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+li{
+  list-style: none;
+}
+
+
